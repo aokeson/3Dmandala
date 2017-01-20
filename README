@@ -1,0 +1,36 @@
+project: Mandala
+
+Alexandra Okeson
+CSCI5229 Fall 2016
+
+Allows users to create a mandala by drawing 3 dimensional shapes and then automatically
+rotating those shapes about the y axis.
+
+Run file main.c
+Press i to enter demo mode!
+
+Key bindings:
+  i               Toggle between normal and instructor demo mode
+  m               Toggle between orthogonal, perspective, and perspective with 1st person navigation
+  x               Toggle axes
+  0               Reset view angle
+  ESC             Exit
+
+Orthogonal/Perspective Navigation
+  arrows          Move left and right/change view angle
+  +/-             Zoom in and out
+
+1st person Navigation
+  up/down arrow   Move eye up and down
+  w/s             Move into and out of scene
+  a/d             Move eye left and right
+
+Toggle through shapes, textures, and colors using the onscreen buttons
+Move and rotate shapes using onscreen buttons
+Move light source using onscreen buttons
+
+I am particularly proud of how the shapes are rotated around the y axis. I had to convert from x,y coordinates to spherical coordinates to get the position. I also had to set the correct rotation angles for each shape. In order to be able to accommodate any number of rotations, I had to do this dynamically so I had to figure out the math and write and algorithm to represent how much each angle and x,y coordinate would change based on the integer number of rotations.
+
+The other thing that I worked a long time on were the buttons. I had to program them so that they did not resize when I resized the window and also did not move when I resized the window. I also had to ensure that these elements were not effected by lighting or other changes in the scene. While I downloaded the code to make the button press work, I had to figure out all of the resizing, placement, functions to make the buttons to manipulate the scene myself.
+
+Hours Spent: 65
